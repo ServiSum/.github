@@ -1,0 +1,30 @@
+name: Feature
+description: Nova funcionalidade ou melhoria
+title: "[Feature] "
+labels: ["feature"]
+body:
+  - type: textarea
+    id: problema
+    attributes:
+      label: Problema / objetivo
+      description: Que dor resolve e para quem (gestor no backoffice, técnico no app, cliente final)?
+    validations:
+      required: true
+  - type: textarea
+    id: aceite
+    attributes:
+      label: Critérios de aceite
+      placeholder: "- [ ] Dado ..., quando ..., então ..."
+  - type: checkboxes
+    id: camadas
+    attributes:
+      label: Camadas afetadas
+      options:
+        - label: Backend
+        - label: Backoffice
+        - label: App
+  - type: input
+    id: spec
+    attributes:
+      label: Spec
+      description: Caminho em docs/specs/ no repo servsoft-workspace, se houver

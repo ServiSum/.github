@@ -1,0 +1,29 @@
+name: Bug
+description: Algo não funciona como deveria
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: oque
+    attributes:
+      label: O que aconteceu
+    validations:
+      required: true
+  - type: textarea
+    id: passos
+    attributes:
+      label: Passos para reproduzir
+      placeholder: "1. Entrar como ...\n2. Ir em ...\n3. Clicar em ..."
+  - type: textarea
+    id: esperado
+    attributes:
+      label: O que era esperado
+  - type: dropdown
+    id: onde
+    attributes:
+      label: Onde
+      options: [Backoffice, App, Backend/API, Não sei]
+  - type: textarea
+    id: evidencia
+    attributes:
+      label: Erro / print / payload
